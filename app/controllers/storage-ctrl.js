@@ -77,9 +77,6 @@ angular
             }
           };
           $scope.clear = function () {
-            if (!$window.confirm('Are you sure')) {
-              return;
-            }
             storage[$rootScope.currentType].clear();
           };
 
